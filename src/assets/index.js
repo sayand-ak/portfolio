@@ -19,7 +19,6 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -28,7 +27,13 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import next from "./tech/next.png";
+import firebase from "./tech/firebase.png";
+import postgress from "./tech/postgress.png";
+import blogger from  "./blogger.svg"
+import matrify from  "./matrify.svg"
+import bigbag from  "./bigbag.svg"
+import livelink from  "./livelink.svg"
 
 export {
   logo,
@@ -51,12 +56,17 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
   meta,
   shopify,
   starbucks,
   tesla,
   carrent,
   jobit,
-  tripguide,
+  next,
+  firebase,
+  postgress,
+  blogger,
+  matrify,
+  bigbag,
+  livelink
 };

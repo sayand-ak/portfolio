@@ -1,7 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components"
 
-
 const App = () => {
     return (
         <div>
@@ -12,7 +11,7 @@ const App = () => {
                         <Hero />
                     </div>
                     <About />
-                    <Experience />
+                    {/* <Experience /> */}
                     <Tech />
                     <Works />
                     <Feedbacks />
@@ -22,7 +21,23 @@ const App = () => {
                     </div>
                 </div>
             </BrowserRouter>
+
+
+
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+
         </div>
+
+        
     )
 }
 

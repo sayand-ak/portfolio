@@ -1,12 +1,9 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
-    html,
-    css,
     reactjs,
     redux,
     tailwind,
@@ -19,10 +16,12 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    next,
+    firebase,
+    postgress,
+    blogger,
+    bigbag,
+    matrify,
   } from "../assets";
   
   export const navLinks = [
@@ -42,32 +41,24 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "NextJs",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Microservices",
+      icon: mobile,
     },
     {
-      title: "Content Creator",
-      icon: creator,
-    },
+      title: "NodeJs",
+      icon: backend,
+    }
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
     {
       name: "JavaScript",
       icon: javascript,
@@ -97,8 +88,8 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Next JS",
+      icon: next,
     },
     {
       name: "git",
@@ -111,6 +102,14 @@ import {
     {
       name: "docker",
       icon: docker,
+    },
+    {
+      name: "firebase",
+      icon: firebase,
+    },
+    {
+      name: "postgress",
+      icon: postgress,
     },
   ];
   
@@ -198,12 +197,56 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Matrify",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A dynamic matrimonial website designed to connect individuals seeking meaningful relationships. Features include profile management, and real-time chat and video call capabilities, providing a comprehensive platform for matchmaking.",
       tags: [
         {
           name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "express",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: matrify, // Replace with the actual image variable
+      source_code_link: "https://github.com/sayand-ak/Matrify-frontend", // Replace with your actual repository link
+      live_link: "https://matrify-frontend.vercel.app/", // Replace with your actual repository link
+    },
+    {
+      name: "Sneaker Hub",
+      description:
+        "An e-commerce platform with features such as product listing, user authentication, and payment integration. This project focuses on delivering a seamless shopping experience with responsive design and secure transactions.",
+      tags: [
+        {
+          name: "vanillaJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "express",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bigbag, // Replace with the actual image variable
+      source_code_link: "https://github.com/sayand-ak/BigBag", // Replace with your actual repository link
+      live_link: "https://bigbag.onrender.com/", // Replace with your actual repository link
+    },
+    {
+      name: "Blogger",
+      description:
+        "A blog website that allows users to create, edit, and publish articles. Features include user management, content moderation, and comment sections, aimed at providing an engaging and user-friendly blogging experience.",
+      tags: [
+        {
+          name: "vanillaJS",
           color: "blue-text-gradient",
         },
         {
@@ -211,55 +254,15 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "bootstrap",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: blogger, // Replace with the actual image variable
+      source_code_link: "https://github.com/sayand-ak/Blogger", // Replace with your actual repository link
+      live_link: "https://blogger-1.onrender.com/", // Replace with your actual repository link
     },
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects };
