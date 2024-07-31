@@ -34,6 +34,16 @@ import blogger from  "./blogger.svg"
 import matrify from  "./matrify.svg"
 import bigbag from  "./bigbag.svg"
 import livelink from  "./livelink.svg"
+import sugith from  "./sugith.jpg";
+import adwaith from "./adwaith.jpg";
+import soji from "./soji.jpeg";
+
+//social link
+import linkedin from "./social/linkedin.png";
+import giticon from "./social/github.png";
+import twitter from "./social/twitter.png";
+import leetcode from "./social/leetcode.png";
+
 
 export {
   logo,
@@ -68,5 +78,12 @@ export {
   blogger,
   matrify,
   bigbag,
-  livelink
+  livelink,
+  sugith,
+  adwaith,
+  soji,
+  linkedin,
+  giticon,
+  twitter,
+  leetcode
 };

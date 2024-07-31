@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import "../index.css"
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -8,10 +9,32 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(true); // State to control navbar visibility
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop) {
+                // Scrolling down
+                setShowNavbar(false);
+            } else {
+                // Scrolling up
+                setShowNavbar(true);
+            }
+
+            setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); 
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollTop]);
+    
 
     return (
         <nav
-            className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+            className={`${styles.paddingX} ${styles.navbar} ${showNavbar ? styles.navbarVisible : styles.navbarHidden} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
         >
             <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
                 <Link
@@ -31,14 +54,14 @@ const Navbar = () => {
                 </Link>
 
 
-                <ul className='list-none hidden sm:flex gap-10 flex-row'>
+                <ul className='list-none hidden sm:flex gap-16 flex-row'>
                     {navLinks.map((link) => (
                         <li
                             key={link.id}
                             className={`${active === link.title
                                     ? "text-white"
                                     : "text-secondary"
-                                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                                } hover:text-white text-[17px] font-medium cursor-pointer`}
                             onClick={() => setActive(link.title)}
                         >
                             <a href={`#${link.id}`}>{link.title}</a>

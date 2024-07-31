@@ -22,6 +22,10 @@ import {
     blogger,
     bigbag,
     matrify,
+    creator,
+    sugith,
+    adwaith,
+    soji,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +50,7 @@ import {
     },
     {
       title: "NextJs",
-      icon: mobile,
+      icon: creator,
     },
     {
       title: "Microservices",
@@ -171,27 +175,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I was able to work with Sayand on a project, and with his backend expertise, we completed the project in less time than given.",
+      name: "Sugith K",
+      designation: "Flutter Developer",
+      image: sugith,
+      portfolio_link:"sugith.in"
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "His innovative approach and attention to detail in UI design consistently enhance the overall quality of his projects.",
+      name: "Adwaith C",
+      designation: "Full Stack Developer",
+      image: adwaith,
+      portfolio_link: "https://adwaith.vercel.app/"
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "His proficiency in both front-end technologies and back-end frameworks is impressive",
+      name: "Soji Pavithran",
+      designation: "Automation Test Engineer ",
+      image: soji,
+      portfolio_link: "#"
     },
   ];
   
