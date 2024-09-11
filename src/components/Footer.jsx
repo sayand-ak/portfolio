@@ -1,5 +1,3 @@
-import React from 'react';
-import { styles } from "../styles"; // Importing styles if needed
 import { giticon, leetcode, linkedin, twitter } from '../assets';
 
 const Footer = () => {
@@ -38,8 +36,8 @@ const Footer = () => {
                     {/* Quick Links with Contact Details */}
                     <div className="space-y-1">
                         <p className="text-white">Contact Details:</p>
-                        <p>Email: <a href="mailto:your.email@example.com" className="text-teal-400 hover:underline">your.email@example.com</a></p>
-                        <p>Phone: <a href="tel:+1234567890" className="text-teal-400 hover:underline">+123 456 7890</a></p>
+                        <p>Email: <a href="mailto:your.email@example.com" className="text-teal-400 hover:underline">sayandak2002@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890" className="text-teal-400 hover:underline">9037365996</a></p>
                     </div>
                     
                     {/* Legal Information */}
